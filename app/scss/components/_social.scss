@@ -1,0 +1,33 @@
+.social {
+    margin-right: 65px;
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+    &__link {
+        outline: transparent;
+        display: flex;
+        align-items: center;
+        &:hover .social__icon{
+            fill: $black;
+        }
+    }
+    &__icon {
+        fill: $brown;
+        transition: fill 0.3s ease-in;
+        &--insta {
+            width: 24px;
+            height: 24px;
+        }
+        &--facebook {
+            width: 10px;
+            height: 20px;
+        }
+
+    }
+}

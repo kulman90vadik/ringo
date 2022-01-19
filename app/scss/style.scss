@@ -9,6 +9,10 @@
 @import './components/logo';
 @import './components/menu';
 @import './components/social';
+@import './home';
+@import './servises';
+@import './about';
+
 @import './components/footer';
 
 
@@ -19,6 +23,9 @@
 // <use xlink:href="images/sprite.svg#tel"></use>
 // </svg>
 
+
+// @include lineClamp;
+// -webkit-line-clamp: 5;
 
 
 

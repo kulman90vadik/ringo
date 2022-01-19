@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ringo</title>
     <link rel="shortcut icon" href="images/logo-title.svg" type="image/svg">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     @include('./components/header.html')
     <main class="main">
-
+        @include('./home.html')
+        @include('./servises.html')
+        @include('./about.html')
     </main>    
     @include('./components/footer.html')
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 </html>

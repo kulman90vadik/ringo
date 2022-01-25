@@ -1,0 +1,86 @@
+.advantage  {
+    margin-bottom: 140px;
+    &__title {
+        margin-bottom: 80px;
+    }
+    &__list {
+        counter-reset: items;
+    }
+    &__item {
+        position: relative;
+        display: flex;
+        border-bottom: 1px solid rgba($black, 0.2);
+        padding: 50px 0;
+        &:first-child {
+            border-top: 1px solid rgba($black, 0.2);
+        }
+        &:hover {
+            & .advantage__images {
+                width: 340px;
+                height: 240px;
+                transition: height 0.3s ease-in, width 0.3s ease-in;
+            }
+            & .advantage__name {
+                color: $brown;
+            }
+            & .advantage__left::after {
+                color: $brown;
+            }
+        }
+    }
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    &__left,
+    &__right {
+        max-width: 50%;
+        width: 100%;
+    }
+    &__right {
+        padding-left: 40px;
+    }
+    &__left {
+        position: relative;
+        &::after {
+            position: absolute;
+            counter-increment: items;
+            content: "0" counter(items);
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: 600;
+            font-size: 24px;
+            color: rgba($black, 0.3);
+            transition: color 0.3s ease-in;
+        }
+    }
+    &__name {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 32px;
+        transition: color 0.3s ease-in;
+        @include lineClamp;
+        -webkit-line-clamp: 1;
+    }
+    &__description {
+        font-weight: 400;
+        color: rgba($black, 0.8);
+        @include lineClamp;
+        -webkit-line-clamp: 3;
+    }
+    &__images {
+        position: absolute;
+        width: 0;
+        height: 0;
+        @include bg;
+        transition: height 0.3s ease-in, width 0.3s ease-in;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

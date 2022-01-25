@@ -1,0 +1,59 @@
+.stage  {
+    margin-bottom: 140px;
+    &__title {
+        margin-bottom: 80px;
+    }
+    &__list {
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: space-between;
+        counter-reset: stage;
+        border-bottom: 1px solid rgba($black, 0.2);
+    }
+    &__item {
+        padding-top: 95px;
+        position: relative;
+        max-width: 240px;
+        width: 100%;
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+        &::after {
+            position: absolute;
+            counter-increment: stage;
+            content: "0" counter(stage);
+            top: 16px;
+            left: 16px;
+            line-height: 1;
+            font-weight: 600;
+            font-size: 24px;
+            color: $green;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            width: 60px;
+            left: 0;
+            top: 0;
+            height: 60px;
+            border-radius: 50%;
+            border: 1px solid rgba($black, 0.3);
+        }
+    }
+    &__name {
+        font-weight: 600;
+        margin-bottom: 15px;
+        display: block;
+        color: $black;
+        font-size: 18px;
+        @include lineClamp;
+        -webkit-line-clamp: 1;
+    }
+    &__text {
+        color: rgba($black, 0.8);
+        p {
+            @include lineClamp;
+            -webkit-line-clamp: 5;
+        }
+    }
+}

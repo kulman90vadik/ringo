@@ -54,6 +54,14 @@ body {
 }
 
 
+.btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    cursor: pointer;
+}
+
 .link {
     font-weight: 700;
     display: block;

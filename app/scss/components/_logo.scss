@@ -6,8 +6,14 @@
         height: 53px;
         margin-right: 143px;
     }
+    &--footer {
+        width: 130px;
+        height: 56px;
+        margin-bottom: 31px;
+    }
     &__images {
         width: 100%;
         object-fit: cover;
     }
+
 }

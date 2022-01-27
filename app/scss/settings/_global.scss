@@ -83,3 +83,32 @@ body {
         color: #fff;
     }
 }
+
+
+.phone {
+    display: block;
+    position: relative;
+    font-weight: 600;
+    font-family: $Lato;    
+    font-size: 20px;
+    outline: transparent;
+    transition: color 0.3s ease-in;
+    padding-left: 25px;
+    color: $green;
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 3px;
+        width: 13px;
+        height: 20px;
+        background-image: url(../images/phone.svg);
+        @include bg;
+    }
+    &:hover {
+        color: $brown;
+    }    
+    &--footer {
+        margin-bottom: 31px;
+    }
+}

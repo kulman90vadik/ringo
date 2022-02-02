@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ringo</title>
+    <link rel="shortcut icon" href="images/logo-title.svg" type="image/svg">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo logo--header" href="#">
+                <img class="logo__images" src="images/logo.svg" alt="logo">
+            </a>
+            <nav class="menu header__menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Напрямки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Про компанію</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Переваги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Етапи роботи</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social social--header">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <svg class="social__icon social__icon--insta" aria-label="instagram">
+                                <use xlink:href="images/sprite.svg#insta"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <svg class="social__icon social__icon--facebook" aria-label="facebook">
+                                <use xlink:href="images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a class="phone phone--header" href="tel:+380676615415">+380 67661 5415</a>
+            <button class="header__btn" type="button" aria-label="menu">
+                <span class="header__btn-item"></span>
+                <span class="header__btn-item"></span>
+                <span class="header__btn-item"></span>
+            </button>
+        </div>
+    </div>
+</header>
+    <main class="main">
+        <section class="home">
+    <h1 class="visually-hidden">виробництво меблів</h1>
+    <div class="home__swiper">
+        <ul class="home__slider">
+            <li class="home__slide" style="background-image: url(images/home.jpg);">
+                <div class="container">
+                    <div class="home__inner">
+                        <span class="home__name wow animate__backInLeft" data-wow-duration="1.5s" data-wow-delay="1s">виробництво меблів</span>
+                        <div class="home__text wow animate__backInLeft" data-wow-duration="1.5s" data-wow-delay="1.5s">
+                            <p>
+                                Ми виконуємо комплексне виготовлення корпусних меблів для житлових і комерційних приміщень, забезпечимо Вас якісним меблевим продуктом власного виробництва. 
+                            </p>
+                        </div>
+                        <a class="link home__link wow animate__backInLeft" data-wow-duration="1.5s" data-wow-delay="2s" href="#">Обговорити проект</a>
+                    </div>
+                </div>
+            </li>
+            <li class="home__slide" style="background-image: url(images/home.jpg);">
+                <div class="container">
+                    <div class="home__inner">
+                        <span class="home__name">виробництво меблів</span>
+                        <div class="home__text">
+                            <p>
+                                Ми виконуємо комплексне виготовлення корпусних меблів для житлових і комерційних приміщень, забезпечимо Вас якісним меблевим продуктом власного виробництва. 
+                            </p>
+                        </div>
+                        <a class="link home__link" href="#">Обговорити проект</a>
+                    </div>
+                </div>
+            </li>
+            <li class="home__slide" style="background-image: url(images/home.jpg);">
+                <div class="container">
+                    <div class="home__inner">
+                        <span class="home__name">виробництво меблів</span>
+                        <div class="home__text">
+                            <p>
+                                Ми виконуємо комплексне виготовлення корпусних меблів для житлових і комерційних приміщень, забезпечимо Вас якісним меблевим продуктом власного виробництва. 
+                            </p>
+                        </div>
+                        <a class="link home__link" href="#">Обговорити проект</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="home__bottom">
+            <div class="container">
+                <div class="home__holder">
+                    <div class="home__arrows">
+                        <button class="home__btn home__btn--prev" type="button">
+                            <svg class="home__icon">
+                                <use xlink:href="images/sprite.svg#arrow-prev"></use>
+                            </svg>
+                        </button>
+                        <button class="home__btn home__btn--next" type="button">
+                            <svg class="home__icon">
+                                <use xlink:href="images/sprite.svg#arrow-next"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="home__pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="servises">
+    <div class="container">
+        <h2 class="title servises__title wow animate__backInUp" data-wow-offset="10" data-wow-duration="1s">Основні напрямки</h2>
+        <ul class="servises__list">
+            <li class="servises__item">
+                <span class="servises__name">Дизайн інтерєру</span>
+                <div class="servises__photo">
+                    <img class="servises__images" src="images/servises-3.jpg" alt="photo">
+                </div>
+                <a class="servises__link" href="#" aria-label="true"></a>
+            </li>
+            <li class="servises__item">
+                <span class="servises__name">Дизайн інтерєру</span>
+                <div class="servises__photo">
+                    <img class="servises__images" src="images/servises-2.jpg" alt="photo">
+                </div>
+                <a class="servises__link" href="#" aria-label="true"></a>
+            </li>
+            <li class="servises__item">
+                <span class="servises__name">Комплексне меблювання</span>
+                <div class="servises__photo">
+                    <img class="servises__images" src="images/servises-3.jpg" alt="photo">
+                </div>
+                <a class="servises__link" href="#" aria-label="true"></a>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="about">
+    <div class="about-service">
+        <div class="container">
+            <h2 class="title about-service__title title--white wow animate__backInUp" data-wow-offset="10" data-wow-duration="1s">Ми забезпечемо вас</h2>
+            <ul class="about-service__list">
+                <li class="about-service__item about-service__item--furniture">
+                    <p class="about-service__description">Меблями</p>
+                </li>
+                <li class="about-service__item about-service__item--light">
+                    <p class="about-service__description">Освітленням</p>
+                </li>
+                <li class="about-service__item about-service__item--kitchen">
+                    <p class="about-service__description">Побутовою технікою</p>
+                </li>
+                <li class="about-service__item about-service__item--doors">
+                    <p class="about-service__description">Дверима</p>
+                </li>
+                <li class="about-service__item about-service__item--panels">
+                    <p class="about-service__description">Стіновими панелями та підлоговим покриттям</p>
+                </li>
+                <li class="about-service__item about-service__item--project">
+                    <p class="about-service__description">Проектуванням</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="about__inner">
+            <h3 class="about__subtitle">Проект Рінго Україна - створений виконувати об`єктні задачі комплексного меблювання житлових та комерційних приміщень.</h3>
+            <ul class="about__list">
+                <li class="about__item wow animate__backInLeft" data-wow-offset="10" data-wow-duration="1s">
+                    Наш колектив націлений на результат - вчасно реалізувати проект на найвищому рівні. Ми забезпечуємо спокій замовника та вирішуємо будь-які задачі
+                </li>
+                <li class="about__item wow animate__backInRight" data-wow-offset="10" data-wow-duration="1s">
+                    Рінго найкращий підрядник прораба, дизайнера, проект-менеджера або персональний помічник власника бізнесу, квартири чи салону
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+        <section class="advantage">
+    <div class="container">
+        <h2 class="title advantage__title wow animate__backInUp" data-wow-offset="10" data-wow-duration="1s">Наші переваги</h2>
+        <ul class="advantage__list">
+            <li class="advantage__item">
+                <div class="advantage__left">
+                    <div class="advantage__images" style="background-image: url(images/advantage-bg.jpg);"></div>
+                </div>
+                <div class="advantage__right">
+                    <span class="advantage__name">Мобільність</span>
+                    <span class="advantage__description">
+                        Проводимо зустрічі на об`єктах в затишних закладах Києва
+                    </span>
+                </div>
+                <a class="advantage__link" href="#"></a>
+            </li>
+            <li class="advantage__item">
+                <div class="advantage__left">
+                    <div class="advantage__images" style="background-image: url(images/advantage-bg.jpg);"></div>
+                </div>
+                <div class="advantage__right">
+                    <span class="advantage__name">Надійність</span>
+                    <span class="advantage__description">
+                        Система нашої роботи зосереджена на якості та термінах завершення проекту
+                    </span>
+                </div>
+                <a class="advantage__link" href="#"></a>
+            </li>
+            <li class="advantage__item">
+                <div class="advantage__left">
+                    <div class="advantage__images" style="background-image: url(images/advantage-bg.jpg);"></div>
+                </div>
+                <div class="advantage__right">
+                    <span class="advantage__name">Якість</span>
+                    <span class="advantage__description">
+                        Виготовляємо виключно з перевірених європейських брендів
+                    </span>
+                </div>
+                <a class="advantage__link" href="#"></a>
+            </li>
+            <li class="advantage__item">
+                <div class="advantage__left">
+                    <div class="advantage__images" style="background-image: url(images/advantage-bg.jpg);"></div>
+                </div>
+                <div class="advantage__right">
+                    <span class="advantage__name">Професіоналізм
+                    </span>
+                    <span class="advantage__description">
+                        Наша команда - це клуб професіоналів, об`єднаних в одній компанії
+                    </span>
+                </div>
+                <a class="advantage__link" href="#"></a>
+            </li>
+            <li class="advantage__item">
+                <div class="advantage__left">
+                    <div class="advantage__images" style="background-image: url(images/advantage-bg.jpg);"></div>
+                </div>
+                <div class="advantage__right">
+                    <span class="advantage__name">Вигідність 
+                    </span>
+                    <span class="advantage__description">
+                        Ми відмовились від шоу-руму та офісу на користь вартості та мобільності
+                    </span>
+                </div>
+                <a class="advantage__link" href="#"></a>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="feedback">
+    <div class="feedback__left wow animate__slideInLeft" data-wow-offset="10" data-wow-duration="1s">
+        <h2 class="title title--white feedback__title">Обговоримо ваш проект?</h2>
+        <div class="feedback__text">
+            <p>
+                Заповніть форму і найближчим часом ми зв'яжемося з вами!
+            </p>
+        </div>
+        <form class="feedback__form"action="#">
+            <label class="visually-hidden" for="name">enter name</label>
+            <input class="feedback__input" type="text" id="name" name="name" placeholder="Ім'я">
+            <label class="visually-hidden" for="tel">enter phone</label>
+            <input class="feedback__input" type="tel" id="tel" name="tel" placeholder="Номер телефону">
+            <label class="feedback__label">
+                <input class="feedback__input-file" type="file" name="file">
+                <span class="feedback__file">Прикріпити проект</span>
+            </label>
+            <button class="link btn feedback__btn" type="submit">Відправити</button>
+
+            <label class="feedback__label-check">
+                <input class="feedback__check" type="checkbox" name="check">
+                <span class="feedback__checkbox"></span>
+                <span class="feedback__descr">Даю згоду на оброблення персональних даних</span>
+            </label>
+
+        </form>
+    </div>
+    <div class="feedback__right" style="background-image: url(images/feedback-bg.jpg);"></div>
+</section>
+        <section class="stage">
+    <div class="container">
+        <h2 class="title stage__title wow animate__backInUp"  data-wow-offset="10" data-wow-duration="1s">Етапи роботи</h2>
+        <ul class="stage__list">
+            <li class="stage__item">
+                <span class="stage__name">Підписання договору</span>
+                <div class="stage__text">
+                    <p>
+                        Визначаємось з бюджетом, матеріалами та фурнітурою. Вносимо правки в проект, 
+                        підписуємо пакет документів.
+                    </p>
+                </div>
+            </li>
+            <li class="stage__item">
+                <span class="stage__name">Виготовлення</span>
+                <div class="stage__text">
+                    <p>
+                        Після підписання договору та визначення термінів, команда Рінго приступає до 
+                        найцікавішого - виробництва!
+                    </p>
+                </div>
+            </li>
+            <li class="stage__item">
+                <span class="stage__name">Встановлення</span>
+                <div class="stage__text">
+                    <p>
+                        По готовності виробництва  починаємо монтаж на обєкті. У домовлений час виконуємо доставку та монтаж.
+                    </p>
+                </div>
+            </li>
+            <li class="stage__item">
+                <span class="stage__name">Новосілля</span>
+                <div class="stage__text">
+                    <p>
+                        По закінченню робимо перевірку та підписуємо акт закінчення робівт. 
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="project">
+    <h2 class="project__title title wow animate__backInUp"  data-wow-offset="10" data-wow-duration="1s">Зараз в роботі</h2>
+    <div class="project-swiper">
+        <ul class="project-swiper__wrapper">
+            <li class="project-swiper__slide">
+                <div class="project-swiper__photo">
+                    <img class="project-swiper__images" src="images/project-1.jpg" alt="project">
+                </div>
+                <span class="project-swiper__name">Квартира ЖК Медовий</span>
+                <span class="project-swiper__stage">3 етап</span>
+            </li>
+            <li class="project-swiper__slide">
+                <div class="project-swiper__photo">
+                    <img class="project-swiper__images" src="images/project-1.jpg" alt="project">
+                </div>    
+                <span class="project-swiper__name">Квартира ЖК Медовий</span>
+                <span class="project-swiper__stage">3 етап</span>
+            </li>
+            <li class="project-swiper__slide">
+                <div class="project-swiper__photo">
+                    <img class="project-swiper__images" src="images/project-1.jpg" alt="project">
+                </div>    
+                <span class="project-swiper__name">Квартира ЖК Медовий</span>
+                <span class="project-swiper__stage">3 етап</span>
+            </li>
+            <li class="project-swiper__slide">
+                <div class="project-swiper__photo">
+                    <img class="project-swiper__images" src="images/project-1.jpg" alt="project">
+                </div>    
+                <span class="project-swiper__name">Квартира ЖК Медовий</span>
+                <span class="project-swiper__stage">3 етап</span>
+            </li>
+        </ul>
+        <button class="project-swiper__btn project-swiper__btn--prev" type="button">
+            <svg class="project-swiper__icon">
+                <use xlink:href="images/sprite.svg#arrow-left"></use>
+            </svg>
+        </button>
+        <button class="project-swiper__btn project-swiper__btn--next" type="button">
+            <svg class="project-swiper__icon">
+                <use xlink:href="images/sprite.svg#arrow-right"></use>
+            </svg>
+        </button>
+    </div>
+</section>
+        <section class="gifts">
+    <div class="container">
+        <div class="gifts__inner">
+            <div class="gifts__left">
+                <img class="gifts__images gifts__images--toaster" src="images/gifts-1.png" alt="gift">
+                <span class="gifts__descr gifts__descr--left">Подарунок</span>
+            </div>
+            <div class="gifts__content">
+                <h2 class="gifts__title title">Рінго роздає подарунки!</h2>
+                <div class="gifts__text">
+                    <p>
+                        При замовленні до нового року, отримай цінний подарунок для свого комфорту
+                    </p>
+                </div>
+                <a class="gifts__link link" href="#">
+                    Хочу подарунок
+                </a>
+            </div>
+            <div class="gifts__right">
+                <img class="gifts__images gifts__images--bake" src="images/gifts-2.png" alt="gift">
+                <span class="gifts__descr gifts__descr--right">Подарунок</span>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="partners">
+    <div class="container">
+        <h2 class="title partners__title wow animate__backInUp" data-wow-offset="10" data-wow-duration="1s">Наші партнери</h2>
+        <div class="partners-swiper">
+            <ul class="partners-swiper__wrapper">
+                <li class="partners-swiper__slide">
+                    <img class="partners-swiper__images" src="images/partners-swiper-1.png" alt="logo">
+                    <a class="partners-swiper__link" href="#" aria-label="true"></a>
+                </li>
+                <li class="partners-swiper__slide">
+                    <img class="partners-swiper__images" src="images/partners-swiper-2.png" alt="logo" >
+                    <a class="partners-swiper__link" href="#" aria-label="true"></a>
+                </li>
+                <li class="partners-swiper__slide">
+                    <img class="partners-swiper__images" src="images/partners-swiper-3.png" alt="logo">
+                    <a class="partners-swiper__link" href="#" aria-label="true"></a>
+                </li>
+                <li class="partners-swiper__slide">
+                    <img class="partners-swiper__images" src="images/partners-swiper-1.png" alt="logo">
+                    <a class="partners-swiper__link" href="#" aria-label="true"></a>
+                </li>
+                <li class="partners-swiper__slide">
+                    <img class="partners-swiper__images" src="images/partners-swiper-3.png" alt="logo">
+                    <a class="partners-swiper__link" href="#" aria-label="true"></a>
+                </li>
+                <li class="partners-swiper__slide">
+                    <img class="partners-swiper__images" src="images/partners-swiper-1.png" alt="logo">
+                    <a class="partners-swiper__link" href="#" aria-label="true"></a>
+                </li>
+                <li class="partners-swiper__slide">
+                    <img class="partners-swiper__images" src="images/partners-swiper-2.png" alt="logo">
+                    <a class="partners-swiper__link" href="#" aria-label="true"></a>
+                </li>
+            </ul>
+
+            <button class="partners-swiper__btn partners-swiper__btn--prev" type="button">
+                <svg class="partners-swiper__icon">
+                    <use xlink:href="images/sprite.svg#arrow-left"></use>
+                </svg>
+            </button>
+            <button class="partners-swiper__btn partners-swiper__btn--next" type="button">
+                <svg class="partners-swiper__icon">
+                    <use xlink:href="images/sprite.svg#arrow-right"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+        <section class="feedback-questions">
+    <div class="feedback-questions__left wow animate__slideInLeft" data-wow-offset="10" data-wow-duration="1s">
+        <h2 class="title title--white feedback-questions__title">Залишилися питання?</h2>
+        <div class="feedback-questions__text">
+            <p>
+                Заповніть форму і найближчим часом ми зв'яжемося з вами!
+            </p>
+        </div>
+        <form class="feedback-questions__form"action="#">
+            <label class="visually-hidden" for="name-questions">enter name</label>
+            <input class="feedback-questions__input" type="text" id="name-questions" name="name" placeholder="Ім'я">
+            <label class="visually-hidden" for="tel-questions">enter phone</label>
+            <input class="feedback-questions__input" type="tel" id="tel-questions" name="tel" placeholder="Номер телефону">
+            <button class="link btn feedback-questions__btn" type="submit">Відправити</button>
+
+            <label class="feedback-questions__label-check">
+                <input class="feedback-questions__check" type="checkbox" name="check">
+                <span class="feedback-questions__checkbox"></span>
+                <span class="feedback-questions__descr">Даю згоду на оброблення персональних даних</span>
+            </label>
+
+        </form>
+    </div>
+    <div class="feedback-questions__right" style="background-image: url(images/feedback-questions-bg.jpg);"></div>
+</section>
+    </main>    
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__left">
+                <a class="logo logo--footer" href="#">
+                    <img class="logo__images" src="images/logo.svg" alt="logo">
+                </a>
+                <div class="social social--footer">
+                    <span class="social__descr">Соцмережі:</span>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon social__icon--insta" aria-label="instagram">
+                                    <use xlink:href="images/sprite.svg#insta"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon social__icon--facebook" aria-label="facebook">
+                                    <use xlink:href="images/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="menu menu--footer">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Основні напрямки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Про компанію</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Переваги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Етапи роботи</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Зараз в роботі</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Стати партнером</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__right">
+                <a class="phone phone--footer" href="tel:+380676615415">+380 67661 5415</a>
+                <button class="btn link footer__btn" type="button">На каву з менеджером!</button>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copy">© 2022 Ringo</p>
+        </div>
+    </div>
+</footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

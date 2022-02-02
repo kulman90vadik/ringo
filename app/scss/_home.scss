@@ -23,6 +23,9 @@
             background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%);
             z-index: 5;
         }
+        @include max($md) {
+            background-position: right;
+        } 
     }
     &__inner {
         color: #fff;
@@ -45,6 +48,14 @@
         max-width: 445px;
         width: 100%;
         text-align: center;
+        @include max($lg) {
+            font-size: 40px;
+            max-width: 500px;
+            margin-bottom: 7px;
+        } 
+        @include max($md) {
+            font-size: 30px;
+        } 
     }
     &__text {
         max-width: 537px;
@@ -58,6 +69,9 @@
             @include lineClamp;
             -webkit-line-clamp: 5;
         }
+        @include max($md) {
+            font-size: 16px;
+        } 
     }
     &__bottom {
         position: absolute;
@@ -69,11 +83,19 @@
         transform: translateX(-50%);
         z-index: 50;
         bottom: 0;
+        @include max($lg) {
+            padding: 10px 0;
+        } 
     }
     &__holder {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    &__arrows {
+        @include max($s) {
+            display: none;
+        } 
     }
     &__btn {
         position: static;
@@ -134,5 +156,10 @@
     }
     & .swiper-button-disabled .home__icon {
         fill: rgba(#fff, 0.4);
+    }
+    &__link {
+        @include max($lg) {
+            padding: 15px 35px;
+        } 
     }
 }

@@ -1,9 +1,14 @@
 .about {
+    overflow: hidden;
     margin-bottom: 140px;
+    @include max($xl) {
+        margin-bottom: 50px;
+        overflow: visible;
+    }
     &__inner {
         position: relative;
-        border-bottom: 1px solid rgba($black, 0.2);
         padding-top: 30px;
+        border-bottom: 1px solid rgba($black, 0.2);
         &::after,
         &::before {
             position: absolute;
@@ -12,14 +17,32 @@
             width: 160px;
             height: 200px;
             background-image: url(../images/about-decor.jpg);
+            @include max($xl) {
+                width: 120px;
+                height: 160px;
+            }
+            @include max($lg) {
+                width: 95px;
+                height: 115px;
+            }
+            @include max($md) {
+                display: none;
+            }
         }
         &::after {
             left: -80px;
             top: 0;
+            @include max($xl) {
+                left: 0;
+            }
         }
         &::before {
             right: -80px;
             top: 90px;
+            @include max($xl) {
+                right: 0;
+                top: 0;
+            }
         }
     }
     &__subtitle {
@@ -32,6 +55,20 @@
         text-align: center;
         @include lineClamp;
         -webkit-line-clamp: 5;
+        @include max($xl) {
+            font-size: 25px;
+            max-width: 600px;
+            margin-bottom: 50px;
+        }
+        @include max($lg) {
+            font-size: 21px;
+            max-width: 480px;
+            margin-bottom: 25px;
+        }
+        @include max($s) {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
     }
     &__list {
         max-width: 925px;
@@ -41,10 +78,13 @@
         padding: 35px 0;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        @include max($md) {
+            padding: 15px 0;
+            flex-wrap: wrap;
+        }
     }
     &__item {
-        max-width: 405px;
+        max-width: 400px;
         width: 100%;
         padding-left: 33px;
         position: relative;
@@ -71,6 +111,17 @@
             top: 6px;
             left: 6px;
         }
+        &:first-child {
+            margin-right: 10px;
+            @include max($md) {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+        @include max($md) {
+            max-width: 100%;
+            padding-left: 25px;
+        }
     }
 }
 
@@ -78,8 +129,21 @@
     background-color: $green;
     padding: 100px 0;
     margin-bottom: 100px;
+    @include max($xl) {
+        padding: 50px 0;
+        margin-bottom: 50px;
+    }
+    @include max($md) {
+        margin-bottom: 10px;
+    }
     &__title {
         margin-bottom: 70px;
+        @include max($xl) {
+            margin-bottom: 40px;
+        }
+        @include max($md) {
+            margin-bottom: 20px;
+        }
     }
     &__list {
         display: flex;
@@ -94,6 +158,19 @@
         justify-content: center;
         text-align: center;
         padding-top: 80px;
+        @include max($lg) {
+            max-width: 30%;
+        }
+        @include max($md) {
+            max-width: 26%;
+        }
+        @include max($sm) {
+            max-width: 50%;
+            margin-bottom: 10px;
+        }
+        @include max($s) {
+            max-width: 100%;
+        }
         &--furniture,
         &--kitchen {
             &::after {
@@ -140,6 +217,12 @@
         }
         &:nth-child(-n+3) {
             margin-bottom: 73px;
+            @include max($lg) {
+                margin-bottom: 30px;
+            }
+            @include max($sm) {
+                margin-bottom: 10px;
+            }
         }
     }
     &__description {
@@ -147,5 +230,11 @@
         width: 100%;
         font-size: 24px;
         color: rgba(#fff, 0.5);
+        @include max($lg) {
+            font-size: 19px;
+        }
+        @include max($md) {
+            font-size: 16px;
+        }
     }
 }

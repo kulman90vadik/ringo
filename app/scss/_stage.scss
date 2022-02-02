@@ -1,7 +1,16 @@
 .stage  {
     margin-bottom: 140px;
+    @include max($xl) {
+        margin-bottom: 50px;
+    }   
     &__title {
         margin-bottom: 80px;
+        @include max($xl) {
+            margin-bottom: 40px;
+        }   
+        @include max($sm) {
+            margin-bottom: 20px;
+        }   
     }
     &__list {
         padding-bottom: 100px;
@@ -9,6 +18,13 @@
         justify-content: space-between;
         counter-reset: stage;
         border-bottom: 1px solid rgba($black, 0.2);
+        @include max($xl) {
+            padding-bottom: 50px;
+        }   
+        @include max($lg) {
+            flex-wrap: wrap;
+            padding-bottom: 25px;
+        }   
     }
     &__item {
         padding-top: 95px;
@@ -17,6 +33,9 @@
         width: 100%;
         &:not(:last-child) {
             margin-right: 15px;
+            @include max($lg) {
+                margin-right: 0;
+            }  
         }
         &::after {
             position: absolute;
@@ -39,6 +58,14 @@
             border-radius: 50%;
             border: 1px solid rgba($black, 0.3);
         }
+        @include max($lg) {
+            max-width: 48%;
+            margin-bottom: 10px;
+            padding-top: 75px;
+        }  
+        @include max($sm) {
+            max-width: 100%;
+        }  
     }
     &__name {
         font-weight: 600;
@@ -48,6 +75,9 @@
         font-size: 18px;
         @include lineClamp;
         -webkit-line-clamp: 1;
+        @include max($sm) {
+            margin-bottom: 5px;
+        } 
     }
     &__text {
         color: rgba($black, 0.8);

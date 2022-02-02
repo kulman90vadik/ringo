@@ -5,9 +5,110 @@
     width: 100%;
     top: 0;
     z-index: 100;
+    transition: padding 0.3s ease-in;
+    &--active {
+        padding: 11px 0;
+        transition: padding 0.3s ease-in;
+    }
+    @include max($xl) {
+        padding: 11px 0;
+    }
     &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+    &__menu {
+        @include max($lg) {
+            position: fixed;
+            background-color: #fff;
+            transform: translateX(100%);
+            transition: transform 0.4s ease-in;
+            top: 0;
+            right: 0;
+            width: 320px;
+            height: 100vh;
+        }
+        @include max($s) {
+            width: 100%;
+        } 
+        &--active {
+            transform: translateX(0%);
+            transition: transform 0.4s ease-in;
+        }
+        & .menu__list {
+            @include max($lg) {
+                text-align: center;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+            }
+            @include max($s) {
+                padding-top: 90px;
+                padding-left: 10px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                text-align: left;
+            }
+        }
+        & .menu__item {
+            &:not(:last-child) {
+                @include max($lg) {
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+            }
+            @include max($lg) {
+                width: 100%;
+            }
+        }
+        & .menu__link {
+            @include max($lg) {
+                display: block;
+                width: 100%;
+                padding: 3px 0;
+            }
+        }
+    }
+    &__btn {
+        display: none;
+        @include max($lg) {
+            display: flex;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            z-index: 50;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+    &__btn-item {
+        display: block;
+        width: 25px;
+        background-color: #000;
+        border-radius: 2px;
+        height: 2px;
+        transition: transform 0.3s ease-in;
+        &:nth-child(2) {
+            margin: 5px 0;
+        }
+    }
+    &__btn-item--active {
+        transform-origin: 45%;
+        transition: transform 0.3s ease-in;
+        &:nth-child(2) {
+            display: none;
+        }
+        &:nth-child(1) {
+            transform: rotate(45deg);
+        }
+        &:nth-child(3) {
+            transform: rotate(-45deg);
+        }
     }
 }

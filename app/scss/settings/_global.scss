@@ -51,6 +51,15 @@ body {
     &--white {
         color: #fff;
     }
+    @include max($lg) {
+        font-size: 35px;
+    }
+    @include max($md) {
+        font-size: 27px;
+    }
+    @include max($s) {
+        font-size: 24px;
+    }
 }
 
 
@@ -99,16 +108,57 @@ body {
         position: absolute;
         content: '';
         left: 0;
-        top: 3px;
+        top: 5px;
         width: 13px;
         height: 20px;
         background-image: url(../images/phone.svg);
         @include bg;
+        @include max($sm) {
+            top: 3px;
+        } 
     }
     &:hover {
         color: $brown;
-    }    
+    }  
+    @include max($lg) {
+        margin-right: 20px;
+    }  
+    @include max($sm) {
+        font-size: 16px;
+        padding-left: 20px;
+    } 
     &--footer {
         margin-bottom: 31px;
+        @include max($lg) {
+            margin-bottom: 0;
+        } 
+        @include max($s) {
+            margin-bottom: 10px;
+        }
+    }
+    &--header {
+        @include max($s) {
+            display: none;
+        } 
+    }
+    &--top {
+        position: fixed;
+        display: block;
+        z-index: 50;
+        bottom: 20px;
+        margin: 0;
+        right: 10px;
+        opacity: 0;
+        animation: top-social 1s 0.5s linear forwards;
+    }
+}
+
+
+@keyframes top-social {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

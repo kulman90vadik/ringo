@@ -5,11 +5,27 @@
         width: 122px;
         height: 53px;
         margin-right: 143px;
+        @include max($xl) {
+            margin-right: 20px;
+        }
+        @include max($lg) {
+            width: 82px;
+            height: 35px;
+        }
+        @include max($s) {
+            position: relative;
+            z-index: 50;
+        } 
     }
     &--footer {
         width: 130px;
         height: 56px;
         margin-bottom: 31px;
+        @include max($sm) {
+            margin-bottom: 0;
+            width: 82px;
+            height: 35px;
+        }
     }
     &__images {
         width: 100%;

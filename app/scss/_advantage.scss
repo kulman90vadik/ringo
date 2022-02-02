@@ -1,7 +1,19 @@
 .advantage  {
     margin-bottom: 140px;
+    @include max($xl) {
+        margin-bottom: 50px;
+    }
+    @include max($md) {
+        margin-bottom: 25px;
+    }
     &__title {
         margin-bottom: 80px;
+        @include max($xl) {
+            margin-bottom: 40px;
+        }
+        @include max($md) {
+            margin-bottom: 20px;
+        }
     }
     &__list {
         counter-reset: items;
@@ -19,6 +31,10 @@
                 width: 340px;
                 height: 240px;
                 transition: height 0.3s ease-in, width 0.3s ease-in;
+                @include max($lg) {
+                    width: 260px;
+                    height: 160px;
+                }
             }
             & .advantage__name {
                 color: $brown;
@@ -26,6 +42,12 @@
             & .advantage__left::after {
                 color: $brown;
             }
+        }
+        @include max($lg) {
+            padding: 25px 0;
+        }
+        @include max($md) {
+            padding: 10px 0;
         }
     }
     &__link {
@@ -42,6 +64,12 @@
     }
     &__right {
         padding-left: 40px;
+        @include max($lg) {
+            padding-left: 10px;
+        }
+        @include max($md) {
+            max-width: 90%; 
+        }
     }
     &__left {
         position: relative;
@@ -57,6 +85,9 @@
             color: rgba($black, 0.3);
             transition: color 0.3s ease-in;
         }
+        @include max($md) {
+            max-width: 10%; 
+        }
     }
     &__name {
         display: block;
@@ -66,6 +97,13 @@
         transition: color 0.3s ease-in;
         @include lineClamp;
         -webkit-line-clamp: 1;
+        @include max($lg) {
+            margin-bottom: 5px;
+            font-size: 25px;
+        }
+        @include max($sm) {
+            font-size: 21px;
+        }
     }
     &__description {
         font-weight: 400;
@@ -82,5 +120,8 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        @include max($md) {
+            display: none;
+        }
     }
 }

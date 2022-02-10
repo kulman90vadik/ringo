@@ -92,4 +92,22 @@ window.addEventListener("load", function(){
 
     new WOW().init();
 
+
+    const headerLinks = document.querySelectorAll('.menu__link');
+    for (let link of headerLinks) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const section = link.getAttribute('href').substr(1);
+            
+            document.getElementById(section).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            document.querySelector('.header__menu').classList.remove('header__menu--active');
+            document.querySelectorAll('.header__btn-item').forEach(item => {
+                item.classList.toggle('header__btn-item--active');
+            });
+        });
+    }
+
 });
